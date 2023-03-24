@@ -1,5 +1,4 @@
 import React from "react";
-import banner1 from "../../../../../images/slider/sliding-4.jpg";
 import * as S from "./styles";
 
 function About() {

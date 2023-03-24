@@ -1,9 +1,9 @@
-import IMG from "../../../../../../images/apartamentos/imgsix.jpg"
-import IMG1 from "../../../../../../images/image.png"
-import IMG2 from "../../../../../../images/luxous.jpg"
-import IMG3 from "../../../../../../images/apartamentos/imgeleven.jpg"
-import IMG4 from "../../../../../../images/apartamentos/imgnine.jpg"
-
+import IMG from "../../../../images/apartamentos/imgsix.jpg"
+import IMG1 from "../../../../images/image.png"
+import IMG2 from "../../../../images/luxous.jpg"
+import IMG3 from "../../../../images/apartamentos/imgeleven.jpg"
+import IMG4 from "../../../../images/apartamentos/imgnine.jpg"
+import IMG5 from "../../../../images/apartamentos/imgseven.jpg"
 
 export const categoriadata=[
   {
@@ -34,6 +34,13 @@ const data = [
     preco: "666.00",
     cart: "Add cart",
     img: IMG4
+  },
+  {
+    title: "IPHONE 12PRO MAX",
+    describe: "Choice Australian Broccoli News 20kg",
+    preco: "666.00",
+    cart: "Add cart",
+    img: IMG5
   },
   {
     title: "MÁQUINA DE SUMO",

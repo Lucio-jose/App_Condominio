@@ -2,7 +2,7 @@
 import React from 'react';
 import { Container, BodyDash } from '../../style/style';
 import * as S from './style'
-import Sucess ,{Agenda, Apartamentdata} from './data';
+import Sucess ,{Agenda} from './data';
 import Menu from '../../Components/Menu';
 import HeadDash from '../../Components/HeadDash';
 import DataContrato from './components/dataContrato';
@@ -16,7 +16,7 @@ function Contratos() {
                 <HeadDash/>
                 <S.AreaTitle>
                   <S.Content>
-                  <h3>Todas Contratos</h3>
+                  <h3>Todos Contratos</h3>
                   </S.Content>
                 </S.AreaTitle>
                 
@@ -34,7 +34,7 @@ function Contratos() {
                       </section>
                     </div>  
                     ))
-                    
+                     
                     }
                   </S.SideLeft>
                   <S.SideRight>

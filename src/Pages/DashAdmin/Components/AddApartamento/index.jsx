@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Search,{Content} from "./styles";
+import Search from "./styles";
 
 function AddApartamento() {
   const [bar, setBar] = useState("none");
@@ -30,6 +30,11 @@ function AddApartamento() {
             </section>
 
             <section>
+            <h3>Nº de quartos*</h3>
+            <input type="text" name="" id="" />
+            </section>
+
+            <section>
             <h3>Categoria*</h3>
             <select name="" id="">
               <option value="">Destaques</option>
@@ -42,6 +47,12 @@ function AddApartamento() {
             </fieldset>
 
             <fieldset>
+
+            <section>
+            <h3>Tamanho*</h3>
+            <input type="text" name="" id="" />
+            </section>
+
             <section>
             <h3>Para*</h3>
             <select name="" id="">

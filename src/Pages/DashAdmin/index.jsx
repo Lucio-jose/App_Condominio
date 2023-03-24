@@ -3,7 +3,6 @@ import React from 'react';
 import * as S from './style/style'
 import Menu from './Components/Menu';
 import HeadDash from './Components/HeadDash';
-import Cards from './Components/Cards';
 import Estatistica from './Components/Estatistica';
 import SmallNotify from './Components/SmallNotificacao';
 import ContentData from './Components/Content_data';
@@ -17,9 +16,6 @@ function DashAdmin() {
         <ContentData/>
         <SmallNotify/>
         <Estatistica/> 
-        <span>
-          Ola mundão
-        </span>
       </S.BodyDash>
     </S.Container>
   );

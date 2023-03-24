@@ -86,8 +86,8 @@ function DataContrato() {
             </section>
             </fieldset>
             <div className="Btnss">
-            <button>Validar</button> 
-            <button id="btndelec">Eliminar</button>  
+            <button>Editar</button> 
+            <button id="btndelec">Cancelar</button>  
             </div>    
         </form>
       </div>
