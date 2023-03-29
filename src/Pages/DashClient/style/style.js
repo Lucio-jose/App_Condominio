@@ -10,7 +10,7 @@ justify-content: space-evenly;
 
 export const BodyDash = styled.div`
 width: 85%;
-height: 1500px;
+padding-bottom: 20px;
 background-color: #f3f3f3f1;
 margin-left: 225px; 
 
@@ -18,4 +18,9 @@ margin-left: 225px;
     height: 1550px;
     justify-content: center;
     }
+
+    @media (max-width:634px){
+width: 100%;
+margin-left: 0px;
+}
 `

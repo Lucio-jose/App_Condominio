@@ -9,6 +9,10 @@ flex-direction: column;
 align-items: center;
 position: fixed;
 left: 0px;
+
+@media (max-width:634px){
+    display: none;
+}
 `
 export const Logo = styled.div`
 width: 100%;

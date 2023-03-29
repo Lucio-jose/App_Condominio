@@ -7,6 +7,12 @@ background-color: #f3f3f3f1;
 display: flex;
 justify-content: center;
 align-items: center;
+
+@media (max-width:634px){
+flex-direction: column-reverse;
+height: 1000px;
+justify-content: start;
+}
 `
 export const Info = styled.div`
 width: 44%;
@@ -15,6 +21,10 @@ background-color: white;
 margin-right: 20px;
 display: flex;
 flex-direction: column;
+
+@media (max-width:634px){
+width: 100%;
+}
 
 p{
     font-size: 14px;
@@ -42,6 +52,10 @@ h3{
     border-bottom: 0.3px solid rgb(116, 243, 232);
     text-align: center;
     padding-bottom: 8px;
+
+    @media (max-width:634px){
+        font-size: 15px;
+}
 }
 
 span{
@@ -81,6 +95,11 @@ display: flex;
 flex-direction: column;
 align-items: center;
 
+@media (max-width:634px){
+width: 100%;
+height: 320px;
+}
+
 h3{
     font-weight: 400;
     margin-top: 10px;
@@ -93,6 +112,10 @@ form{
     display: flex;
     flex-direction: column;
 
+    @media (max-width:634px){
+       width: 100%;
+    }
+ 
     #AreaInputs{
         display: flex;
     justify-content: space-evenly;

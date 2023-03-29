@@ -12,6 +12,8 @@ import Contratos from "../Pages/DashAdmin/Pages/Contratos";
 
 import DashClient from "../Pages/DashClient";
 import FormComprar from "../Pages/DashClient/Pages/FormComprar";
+import Reserva from "../Pages/DashClient/Pages/Reservas";
+import Contrato from "../Pages/DashClient/Pages/Contrato";
 
 import { PrivateRoute, RouteNonAcess } from "./data/routes";
 
@@ -30,6 +32,8 @@ function Routes() {
 
       <Route path="/dashclient" component={DashClient}/>
       <Route path="/clientcomprar" component={FormComprar}/>
+      <Route path="/reservafeita" component={Reserva}/>
+      <Route path="/contratosreading" component={Contrato}/>
     
       <Route path="*" component={NotFound} />
     </Switch>

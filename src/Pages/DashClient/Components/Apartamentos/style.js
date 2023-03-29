@@ -51,11 +51,8 @@ padding-bottom: 20px;
     border-radius: 3px;
     margin-bottom:20px;
 
-    @media(max-width: 1164px) {
-        height: 700px;
-    }
+    
     @media(max-width: 583px) {
-        height: 1100px;
         justify-content: space-evenly;
     }
     

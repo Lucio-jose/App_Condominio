@@ -25,34 +25,34 @@ export const Agenda = [
         ate:"07/07",
         user: "LÚCIO JOSÉ CARDOSO",
         prodct:"Quero o apartamento T2",
-        bnt:"Validar"
+        bnt:"Cancelar"
     },
     {
         desde:"07/07",
         ate:"07/07",
         user: "LÚCIO JOSÉ CARDOSO",
         prodct:"Quero o apartamento T2",
-        bnt:"Validar"
+        bnt:"Cancelar"
     },
     {
         desde:"07/07",
         ate:"07/07",
         user: "LÚCIO JOSÉ CARDOSO",
         prodct:"Quero o apartamento T2",
-        bnt:"Validar"
+        bnt:"Cancelar"
     },
     {
         desde:"07/07",
         ate:"07/07",
         user: "LÚCIO JOSÉ CARDOSO",
         prodct:"Quero o apartamento T2",
-        bnt:"Validar"
+        bnt:"Cancelar"
     },
     {
         desde:"07/10",
         ate:"01/01",
         user: "LÚCIO JOSÉ CARDOSO",
         prodct:"Quero o apartamento T2",
-        bnt:"Validar"
+        bnt:"Cancelar"
     },
 ]

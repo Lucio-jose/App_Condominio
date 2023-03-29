@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -16,6 +17,9 @@ flex-direction: column;
     
     @media(max-width: 749px) {
     height: 750px;
+    }
+    @media(max-width: 634px) {
+    height: 350px;
     }
 `
 
@@ -64,7 +68,7 @@ flex-wrap: wrap;
         }
     }
 `
-export const Card = styled.div`
+export const Card = styled(Link)`
 width: 225px;
 height: 130px;
 display: flex;
@@ -74,6 +78,12 @@ text-align: center;
 border-radius: 7px;
 margin: 7px 5px;
 padding: 7px;
+color: #16161d;
+
+@media(max-width: 494px) {
+    width: 150px;
+    height: 100px;
+    }
 
 :hover{
     cursor: pointer;
@@ -84,6 +94,11 @@ img{
     width: 40px;
     height: 40px;
     margin: 10px 0px 0px 10px;
+
+    @media(max-width: 494px) {
+    width: 30px;
+    height: 30px;
+    }
 }
 h4{
     font-weight: 600;
@@ -91,6 +106,10 @@ h4{
     display: flex;
     justify-content: flex-start;
     margin: 10px 0px 10px 10px;
+
+    @media(max-width: 494px) {
+    font-size: 12px;
+    }
 }
 p{
     font-size: 20px;
@@ -98,6 +117,10 @@ p{
     display: flex;
     justify-content: flex-start;
     margin-left: 10px;
+
+    @media(max-width: 494px) {
+    font-size: 12px;
+    }
 }
 
 div{

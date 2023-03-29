@@ -1,6 +1,6 @@
 import IMG from '../../../../images/icons-dash/mega.svg'
-import IMG1 from '../../../../images/icons-dash/shopping-cart.svg'
-import IMG2 from '../../../../images/icons-dash/gift.svg'
+import IMG1 from '../../../../images/icons-dash/edit.svg'
+import IMG2 from '../../../../images/icons-dash/check-circle.gif'
 
 
 const data=[
@@ -14,16 +14,16 @@ const data=[
     {
         title:"Reservas",
         img:IMG1,
-        path:"/reservas"
+        path:"/reservafeita"
     }, 
     {
         title:"Contratos",
-        img:IMG,
+        img:IMG2,
         path:"/contratosreading"
     },
     {
         title:"Terminar sessão",
-        img:IMG2,
+        img:IMG,
         path:"/profile"
     },
 ]

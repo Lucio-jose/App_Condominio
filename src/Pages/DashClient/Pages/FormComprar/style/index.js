@@ -18,4 +18,9 @@ margin-left: 225px;
     height: 1550px;
     justify-content: center;
     }
+
+@media (max-width:634px){
+width: 100%;
+margin-left: 0px;
+}
 `

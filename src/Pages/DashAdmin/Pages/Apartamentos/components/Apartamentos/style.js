@@ -48,7 +48,7 @@ border-radius: 15px;
 
 export const Content = styled.div`
 width: 95%;
-height: 400px;
+padding-bottom: 20px;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -59,11 +59,7 @@ border: 1px solid #e1e1e1;
     border-radius: 3px;
     margin-bottom:20px;
 
-    @media(max-width: 1164px) {
-        height: 700px;
-    }
     @media(max-width: 583px) {
-        height: 1100px;
         justify-content: space-evenly;
     }
     

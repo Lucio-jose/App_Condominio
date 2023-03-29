@@ -9,28 +9,28 @@ const data = [
     describe: "00",
     img: IMG,
     id: "first",
-    path:"/login"
+    path:"/reservafeita"
   },
   {
     title: "C. EM ANDAMENTO",
     describe: "00",
     img: IMG1,
     id: "second",
-    path:"/login"
+    path:"/contratosreading"
   },
   {
     title: "A. NO CARRINHO",
     describe: "00",
     img: IMG2,
     id: "thirsd",
-    path:"/login"
+    path:"/dashclient"
   },
   {
     title: "ESTATÍSTICA GERAL",
     describe: "20%",
     img: IMG3,
     id: "fourth",
-    path:"/login"
+    path:"/dashclient"
   }
 ];
 export default data;
