@@ -1,14 +1,14 @@
 import React from "react";
-import logo from "../../images/logo2.png";
+import logo from "../../images/icons-dash/alert-triangle.svg";
 import { PageNotFound } from "./styles";
 
 const NotFound = () => {
   return (
     <>
       <PageNotFound>
-        <h1>Page Not Found</h1>
+        <h1>Página indisponível</h1>
 
-        <img src={logo} alt="Logo do About Vocation" />
+        <img src={logo} alt="Logo do BGOLDEN" />
       </PageNotFound>
     </>
   );

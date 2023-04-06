@@ -22,9 +22,14 @@ const data=[
         path:"/contratosreading"
     },
     {
+        title:"Informações",
+        img:IMG1,
+        path:"/publications"
+    },
+    {
         title:"Terminar sessão",
         img:IMG,
-        path:"/profile"
+        path:"/"
     },
 ]
 export {data}

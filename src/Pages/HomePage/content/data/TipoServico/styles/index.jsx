@@ -1,4 +1,14 @@
-import styled from "styled-components";
+import styled ,{ keyframes}from "styled-components";
+
+const Animateup = keyframes`
+  from{
+    margin-top: 1000px;
+    }
+    to{
+       margin-top: 0px;
+    }
+
+`;
 
 export const Container = styled.div`
   width: 90%;
@@ -9,6 +19,8 @@ height: 270px;
   justify-content: center;
   justify-content: space-between;
   flex-wrap: wrap;
+animation-name: ${Animateup};
+animation-duration: 3s;
 
   @media(max-width:833px){
 height: 770px;

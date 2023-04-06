@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../images/logo.png";
+import logo from "../../images/logo-1.png";
 import { isAuthenticated } from "../../services/auth";
 import Searching from "./Search";
 import { Head } from "./style";
@@ -42,7 +42,7 @@ export default function Header({ page }) {
             </li>
             <li>
               <Link to="/testevocacional"> Apartamentos</Link>
-            </li>
+            </li> 
             <li>
               <Link to="/formation"> Services </Link>
             </li>

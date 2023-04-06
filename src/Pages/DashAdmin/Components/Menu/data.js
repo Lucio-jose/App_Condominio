@@ -2,6 +2,9 @@ import IMG from '../../../../images/icons-dash/mega.svg'
 import IMG1 from '../../../../images/icons-dash/edit.svg'
 import IMG2 from '../../../../images/icons-dash/gift.svg'
 import IMG3 from '../../../../images/icons-dash/check-circle.gif'
+import IMG4 from '../../../../images/icons-dash/paper-plane.svg'
+
+
 
 
 const data=[
@@ -28,9 +31,9 @@ const data=[
         path:"/contratos"
     },
     {
-        title:"Perfil da empresa",
-        img:IMG2,
-        path:"/profile"
+        title:"Publicações Feitas",
+        img:IMG4,
+        path:"/posts"
     },
 ]
 export {data}

@@ -1,7 +1,6 @@
 import React from "react";
 import data from './data.js'
 import * as Style from './style.js';
-import { Link } from "react-router-dom";
 
 function Cards(){
 return(

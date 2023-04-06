@@ -3,6 +3,7 @@ import data, {categoriadata} from './data.js'
 import * as Style from './style.js';
 import TitleAdd from "../TitleAdd/index.jsx";
 import { Link } from "react-router-dom";
+import DescApartamento from "../descApartamento/index.jsx";
 
 function Apartament(){
 return(
@@ -23,13 +24,13 @@ return(
                         {item.describe}
                     </p>
                     <section key={index}>
-                        <button>Editar</button>
+                        <DescApartamento/>
                     <span key={index}>$<span key={index}>
                         {item.preco}
                     </span></span>
                     </section>
                    
-                </Style.Card>
+                </Style.Card> 
             ))}
         </Style.Content>
         <div id="DiVerMais">

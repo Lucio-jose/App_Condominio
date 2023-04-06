@@ -1,6 +1,6 @@
 import IMG from "../../../../images/icons-dash/comprar-online.png"
 import IMG1 from "../../../../images/icons-dash/icon_training.png"
-import IMG2 from "../../../../images/icons-dash/shopping-cart.svg"
+import IMG2 from "../../../../images/icons-dash/pixabay.svg"
 import IMG3 from "../../../../images/icons-dash/statisc.png"
 
 const data = [
@@ -19,11 +19,11 @@ const data = [
     path:"/contratosreading"
   },
   {
-    title: "A. NO CARRINHO",
+    title: "INFORMAÇÕES",
     describe: "00",
     img: IMG2,
     id: "thirsd",
-    path:"/dashclient"
+    path:"/publications"
   },
   {
     title: "ESTATÍSTICA GERAL",
