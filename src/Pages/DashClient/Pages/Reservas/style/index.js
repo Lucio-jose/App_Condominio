@@ -87,8 +87,8 @@ flex-direction: column;
 
 .contentRight{
     display: flex;
-    margin-top: 25px;
-    height: 60px;
+    margin-top:auto;
+    height: auto;
     border-bottom: 1px solid #e1e1e1;
 
     :hover{ 
@@ -111,6 +111,8 @@ flex-direction: column;
         display: flex;
         flex-direction: column;
         width: 100px;
+
+        height: auto;
         justify-content: center;
 
         span{

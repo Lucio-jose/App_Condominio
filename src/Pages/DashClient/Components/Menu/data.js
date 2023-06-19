@@ -25,11 +25,6 @@ const data=[
         title:"Informações",
         img:IMG1,
         path:"/publications"
-    },
-    {
-        title:"Terminar sessão",
-        img:IMG,
-        path:"/"
-    },
+    }
 ]
 export {data}

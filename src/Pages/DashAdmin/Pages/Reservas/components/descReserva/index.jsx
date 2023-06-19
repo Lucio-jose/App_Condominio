@@ -1,14 +1,29 @@
 import React, { useState } from "react";
 import Search from "./style";
 import Img from "../../../../../../images/image.png"
+import api from "../../../../../../services/api";
 
-function DescReserva() {
+function DescReserva({key}) {
+   const getApartamentos=async(e)=>{
+    console.log("ID DO APART",e.target.id);
+    console.log();
+    const response = await api.
+    get(`/apartaments/${e.target.id}`)
+    .then((res)=>{
+   console.log(res.data);
+    })
+    .catch(({ response }) => {
+      console.error(response.data);
+    //   alert(response.data.mensagem||response.data||response.data.error)
+  
+    });}
   const [bar, setBar] = useState("none");
   return (
     <Search bar={bar}>
       <button
         onClick={() => {
           bar === "flex" ? setBar("none") : setBar("flex");
+
         }}
       >
         Ver detalhe
@@ -86,8 +101,8 @@ function DescReserva() {
             </section>
             </fieldset>
             <div className="Btnss">
-            <button>Validar</button> 
-            <button id="btndelec">Eliminar</button>  
+            {/* <button>Validar</button>  */}
+            {/* <button id="btndelec">Eliminar</button>   */}
             </div>    
         </form>
       </div>

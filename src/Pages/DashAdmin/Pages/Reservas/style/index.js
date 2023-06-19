@@ -80,7 +80,7 @@ flex-direction: column;
 .contentRight{
     display: flex;
     margin-top: 25px;
-    height: 60px;
+    height: auto;
     border-bottom: 1px solid #e1e1e1;
 
     :hover{ 

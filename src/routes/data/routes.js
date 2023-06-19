@@ -1,15 +1,18 @@
-import React from "react";
-import { Redirect, Route } from "react-router-dom";
-import { isAdmin, isAuthenticated } from "../../services/auth";
+import React from 'react';
+import { Redirect, Route } from 'react-router-dom';
+import { isAdmin, isAuthenticated } from '../../services/auth';
+const is_admin=isAdmin()
 
 const PrivateRoute = ({ component: Component, ...rest }) => (
   <Route
     {...rest}
-    render={(props) =>
+    render={props =>
       isAuthenticated() ? (
         <Component {...props} />
       ) : (
-        <Redirect to={{ pathname: "/", state: { from: props.location } }} />
+        <Redirect
+          to={{ pathname: '/login', state: { from: props.location } }}
+        />
       )
     }
   />
@@ -18,11 +21,11 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
 const RouteNonAcess = ({ component: Component, ...rest }) => (
   <Route
     {...rest}
-    render={(props) =>
+    render={props =>
       !isAuthenticated() ? (
         <Component {...props} />
       ) : (
-        <Redirect to={{ pathname: "/", state: { from: props.location } }} />
+        <Redirect to={{ pathname: '/', state: { from: props.location } }} />
       )
     }
   />
@@ -31,11 +34,11 @@ const RouteNonAcess = ({ component: Component, ...rest }) => (
 const AdminRoute = ({ component: Component, ...rest }) => (
   <Route
     {...rest}
-    render={(props) =>
-      isAdmin() ? (
+    render={props =>
+      is_admin===true ? (
         <Component {...props} />
       ) : (
-        <Redirect to={{ pathname: "/", state: { from: props.location } }} />
+        <Redirect to={{ pathname: '/', state: { from: props.location } }} />
       )
     }
   />

@@ -19,6 +19,11 @@ export const MainForm = styled.div`
   justify-content: center;
   align-items: center;
 
+  span{
+    color: #f64c75;
+    align-self: flex-start;
+  }
+
   h2{
     margin-bottom: 25px;
     color: silver;
@@ -42,6 +47,10 @@ export const MainForm = styled.div`
     color: white;
     font-size: 16px;
     margin-bottom: 15px;
+  }
+  button:focus{
+    background-color: #16161d;
+    border: 2px solid #24324a;
   }
 
   a{

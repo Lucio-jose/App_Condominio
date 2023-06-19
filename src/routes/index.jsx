@@ -1,5 +1,6 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { AdminRoute, PrivateRoute, RouteNonAcess } from './data/routes';
 import Home from "../Pages/HomePage";
 import NotFound from "../Pages/404";
 import Login from "../Pages/Login";
@@ -17,30 +18,32 @@ import Reserva from "../Pages/DashClient/Pages/Reservas";
 import Contrato from "../Pages/DashClient/Pages/Contrato";
 import VewPosts from "../Pages/DashClient/Pages/Posts";
  
-import { PrivateRoute, RouteNonAcess } from "./data/routes";
+//import { PrivateRoute, RouteNonAcess } from "./data/routes";
 
 
 function Routes() { 
   return (
+    <BrowserRouter>
     <Switch>
       <Route exact path="/" component={Home} />
-      <Route path="/login" component={Login}/> 
+      <RouteNonAcess path="/login" component={Login}/> 
       <Route path="/signup" component={Cadastro}/> 
 
-      <Route path="/admin" component={DashAdmin}/> 
-      <Route path="/apartamentos" component={Apartamentos}/>
-      <Route path="/reserved" component={Reservas}/>
-      <Route path="/contratos" component={Contratos}/>
-      <Route path="/posts" component={Posts}/>
+      <AdminRoute exact path="/admin" component={DashAdmin}/>
+      <AdminRoute path="/apartamentos" component={Apartamentos}/>
+      <AdminRoute path="/reserved" component={Reservas}/>
+      <AdminRoute path="/contratos" component={Contratos}/>
+      <AdminRoute path="/posts" component={Posts}/>
 
-      <Route path="/dashclient" component={DashClient}/>
-      <Route path="/clientcomprar" component={FormComprar}/>
-      <Route path="/reservafeita" component={Reserva}/>
-      <Route path="/contratosreading" component={Contrato}/>
-      <Route path="/publications" component={VewPosts}/>
+      <PrivateRoute path="/dashclient" component={DashClient}/>
+      <PrivateRoute path="/clientcomprar/:id" component={FormComprar}/>
+      <PrivateRoute path="/reservafeita" component={Reserva}/>
+      <PrivateRoute path="/contratosreading" component={Contrato}/>
+      <PrivateRoute path="/publications" component={VewPosts}/>
     
       <Route path="*" component={NotFound} />
     </Switch>
+</BrowserRouter>
   );
 }
 

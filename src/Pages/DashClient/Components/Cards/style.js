@@ -69,7 +69,7 @@ flex-wrap: wrap;
     }
 `
 export const Card = styled(Link)`
-width: 225px;
+width: 255px;
 height: 130px;
 display: flex;
 flex-direction: column;
@@ -112,8 +112,7 @@ h4{
     }
 }
 p{
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 18px;
     display: flex;
     justify-content: flex-start;
     margin-left: 10px;

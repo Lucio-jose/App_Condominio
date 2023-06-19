@@ -101,7 +101,7 @@ flex-direction: column;
 .contentRight{
     display: flex;
     margin-top: 25px;
-    height: 60px;
+    height: auto;
     border-bottom: 1px solid #e1e1e1;
 
     :hover{ 
@@ -131,8 +131,20 @@ flex-direction: column;
         }
     }
     #center{
+        display: flex;
+        flex-direction: row;
         width: 70%;
         margin: 0px 10px;
+
+        section{
+            display: flex;
+            flex-direction: column;
+        }
+
+        img{
+            width:200px;
+            height:120px;
+        }
     }
 }
 

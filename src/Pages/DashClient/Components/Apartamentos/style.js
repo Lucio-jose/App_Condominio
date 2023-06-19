@@ -17,15 +17,15 @@ padding: 30px 0px;
         width: 95%;
         height: 60px;
 
-        a{
-            font-family: 'Rubik',sans-serif;
-            font-size: 14px;
-            color: #FF9300;
+        a{ font-family: 'Rubik',sans-serif;
+            font-size: 24px;
+            font-weight: 500;
+            color: #222;
         }
 
         h3{
             font-family: 'Rubik',sans-serif;
-            font-size: 24px;
+            font-size: 19px;
             font-weight: 500;
             color: #222;
 
@@ -41,9 +41,7 @@ padding: 30px 0px;
 export const Content = styled.div`
 width: 95%;
 display: flex;
-justify-content: center;
 align-items: center;
-justify-content: space-between;
 flex-wrap: wrap;
 background-color: #FFFFFF;
 border: 1px solid #e1e1e1;
@@ -67,7 +65,7 @@ align-items: center;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 text-align: end;
 border-radius: 15px;
-margin: 7px 5px;
+margin: 7px 25px;
 
 @media(max-width: 389px) {
     width: 150px;

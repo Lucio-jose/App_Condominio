@@ -3,11 +3,12 @@ import React from 'react';
 import * as S from './style'
 import AddApartamento from "../../../../Components/AddApartamento/index.jsx";
 
-function TitleAdd() {
+function TitleAdd({data}) {
+
   return (
       <>
         <S.Container>
-            <h3>Todos Apartamentos</h3>
+            <h3>{data}</h3>
             <AddApartamento/>
         </S.Container>
       </>

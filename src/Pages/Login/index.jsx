@@ -1,61 +1,79 @@
 import React from "react";
+import { useState } from "react";
 import api from "../../services/api";
 import { toast } from "react-toastify";
-import { Link } from "react-router-dom";
+import{Link} from 'react-router-dom';
 import { Form, Input } from "@rocketseat/unform";
 import { schema } from "../../Validations/Login";
-import { useState } from "react/cjs/react.development";
-import { login, UserLogado } from "../../services/auth";
+import * as auth from '../../services/auth';
 
 import * as S from './style.js';
 
+console.log("ISADMIN", auth.isAdmin())
 function Login(props) {
+  const [email, setEmail] = useState('');
+  const [password, setSenha] = useState('');
+  const [loading, setLoading] = useState(false);
 
-    const [error, setError] = useState("");
+  const handleEmail = e => {
+    setEmail(e.target.value);
+  };
+  const handleSenha = e => {
+    setSenha(e.target.value);
+  };
 
-  async function handleSubmit(data) {
-    PostData(data);
+  async function handleSubmit(e) {
+    console.log(e)
+    PostData({ email, password });
   }
 
   const notify = () => {
-    toast.error("Email ou Password Inválido.!");
+    toast.error('Email ou Password Inválido.!');
   };
 
   async function PostData(data) {
     const response = await api
-      .post("/sessions", data)
-      .then(console.log("Sucesso ao Enviar => ", data))
+      .post('/signin', data)
+      .then(res => {
+        if (res.status === 200) {
+          auth.login(res.data.token);
+          auth.UserLogado(res.data);
+          const path= auth.isAdmin()===true?"/admin":"/dashclient"
+          window.location.href = path
+        }
+      })
       .catch(({ response }) => {
-        console.warn(response);
-        setError(response.data.error);
-        notify();
+        alert(response.data?.error)
+        //console.warn(response.error);
+        //toast.error(response.data.error);
       });
-
-    if (response) {
-      console.log("Sucesso ao Receber Dados => ", response.data);
-      const { token, user } = response.data;
-      login(token);
-      UserLogado(user);
-
-      user.email === "freela@dev.com"
-        ? props.history.push("/admin")
-        : props.history.push("/");
-    }
   }
-
     return (
       <>
         <S.MainForm>
-            <Form onSubmit={handleSubmit} schema={schema}>
+            <Form  onSubmit={()=>handleSubmit()}>
                 <h2>The Golden</h2>
-                <Input type="email" name="email" placeholder="Email" />
-                <Input type="password" name="password" placeholder="Password" />
+
+                <Input 
+                type="email" 
+                name="email" 
+                placeholder="Email" 
+                onChange={handleEmail}
+                value={email}
+                />
+                <Input 
+                type="password" 
+                name="password" 
+                placeholder="Password"
+                onChange={handleSenha}
+                value={password}
+                />
   
-                <button type="submit">Login</button>
+                <button 
+                  type="submit"
+                >Login</button>
   
-                <span>
                   <Link to="/forgotpassword"> Esqueceu a senha?</Link>
-                </span>
   
                 <article></article>
   
