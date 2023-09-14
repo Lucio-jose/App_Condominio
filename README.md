@@ -10,6 +10,6 @@
 Trabalhos Estes que sao exercidos em Angola e não só.📌
 
 
-# Desenvolvimento 🚧🚧
+# Desenvolvimento 🚧🚧 
 
 Descrição Indisponível
